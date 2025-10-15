@@ -1,0 +1,84 @@
+body {
+    margin: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(168, 165, 165);
+    margin: 0;
+
+}
+
+.nav-buttons ul {
+    list-style: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+
+}
+
+.nav-buttons button {
+    border: none;
+    background-color: transparent;
+
+}
+
+.nav-buttons img {
+    width: 20px;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    gap: 0.5rem;
+}
+
+.art-logo img {
+    width: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons .filter {
+    width: 25px;
+}
+
+.nav-buttons .mag-button {
+    width: 20px;
+}
+
+@media (max-width:768px) {
+    .mobile {
+        display: block
+    }
+
+    .nav-768 {
+        display: none
+    }
+}
+
+@media (min-width:769px) {
+    .nav-768 {
+        display: block
+    }
+
+    .mobile {
+        display: none
+    }
+
+}
+
+.nav-768 .nav-info {
+    display: flex;
+    list-style: none;
+    background-color: red;
+}
