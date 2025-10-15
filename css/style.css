@@ -1,5 +1,6 @@
 body {
-    margin: 1rem;
+    margin: 0;
+    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -77,6 +78,12 @@ body {
 
 }
 
+.nav-768 {
+    padding: .7rem;
+    align-items: center;
+
+}
+
 .nav-768 ul {
 
     list-style: none;
@@ -89,10 +96,23 @@ body {
 .nav-768 button {
     border: none;
     background-color: transparent;
+    font-size: 1rem;
 
 }
 
 .nav-768 ul li {
     margin: 0 1.5rem;
 
+}
+
+.nav-buttons2 img {
+    width: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .art-logo img {
+
+        display: none
+    }
 }
