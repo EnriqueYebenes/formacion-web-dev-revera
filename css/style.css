@@ -1,10 +1,10 @@
 body {
     margin: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
-.mobile {
+.nav-mobile {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +46,7 @@ body {
     width: 75px;
     display: flex;
     align-items: center;
+
 }
 
 .nav-buttons .filter {
@@ -57,9 +58,7 @@ body {
 }
 
 @media (max-width:768px) {
-    .mobile {
-        display: block
-    }
+
 
     .nav-768 {
         display: none
@@ -68,17 +67,32 @@ body {
 
 @media (min-width:769px) {
     .nav-768 {
-        display: block
+        display: flex;
+        justify-content: space-evenly;
     }
 
-    .mobile {
+    .nav-mobile {
         display: none
     }
 
 }
 
-.nav-768 .nav-info {
-    display: flex;
+.nav-768 ul {
+
     list-style: none;
-    background-color: red;
+    color: black;
+    display: flex;
+
+
+}
+
+.nav-768 button {
+    border: none;
+    background-color: transparent;
+
+}
+
+.nav-768 ul li {
+    margin: 0 1.5rem;
+
 }
